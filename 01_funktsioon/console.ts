@@ -15,3 +15,4 @@ for(let nr=0; nr<vanus; nr++){
     symbolid.push("*");
 }
 console.log("symbolid")
+//Tähtsad veebisaidid: https://www.tlu.ee/~jaagup/
