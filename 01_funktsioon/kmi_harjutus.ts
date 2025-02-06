@@ -20,6 +20,10 @@ console.log(indeksid);
 // Näidake kuidas väärtused erinevad
 
 //Arvutage mõlema valemiga sama massi ja eri pikkuste juures
+function kmi(cm:number, kg:number):number{
+    let m:number=cm/100;
+    return 1.3*kg/Math.pow(m, 2.5);
+}
 
 let indeksid2:number[]=massid.map(mass => kehamassiindeks(181, mass));
 console.log(indeksid2);
