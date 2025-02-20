@@ -1,4 +1,4 @@
-class Cake {
+class Cake { // Kookide klass
     name: string;
     ingredients: string[];
     bakingTime: number; // küpsetusaeg minutites
@@ -9,7 +9,7 @@ class Cake {
         this.bakingTime = bakingTime;
     }
 
-    // Retsept
+    // Meetod retsepti kuvamiseks
     displayRecipe(): void {
         console.log(`Recipe for ${this.name}:`);
         console.log("Ingredients:");
@@ -19,7 +19,7 @@ class Cake {
         console.log(`Baking time: ${this.bakingTime} minutes\n`);
     }
 
-    // Method to start baking
+    // Meetod küpsetamise alustamiseks
     startBaking(): void {
         console.log(`Baking ${this.name}...`);
         setTimeout(() => {
