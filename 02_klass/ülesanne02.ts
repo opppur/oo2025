@@ -1,7 +1,7 @@
 class Cake {
     name: string;
     ingredients: string[];
-    bakingTime: number; // baking time in minutes
+    bakingTime: number; // küpsetusaeg minutites
 
     constructor(name: string, ingredients: string[], bakingTime: number) {
         this.name = name;
@@ -9,7 +9,7 @@ class Cake {
         this.bakingTime = bakingTime;
     }
 
-    // Method to display the recipe
+    // Retsept
     displayRecipe(): void {
         console.log(`Recipe for ${this.name}:`);
         console.log("Ingredients:");
@@ -24,27 +24,27 @@ class Cake {
         console.log(`Baking ${this.name}...`);
         setTimeout(() => {
             console.log(`${this.name} is ready! Enjoy your delicious cake!\n`);
-        }, this.bakingTime * 1000); // Simulate baking time using setTimeout
+        }, this.bakingTime * 1000); // Küpsetusaeg kasutades setTimeout-i
     }
 }
 
-// Create two instances of the Cake class
+// Kaks näiteretsepti
 const chocolateCake = new Cake(
     "Chocolate Cake",
     ["Flour", "Sugar", "Cocoa Powder", "Eggs", "Milk", "Butter", "Baking Powder"],
-    45 // Baking time in minutes
+    45 // minutites küpsetusaeg
 );
 
 const carrotCake = new Cake(
     "Carrot Cake",
     ["Flour", "Sugar", "Carrots", "Eggs", "Vegetable Oil", "Walnuts", "Cinnamon", "Baking Soda"],
-    60 // Baking time in minutes
+    60 // minutites küpsetusaeg
 );
 
-// Display recipes
+// Kuva retseptid
 chocolateCake.displayRecipe();
 carrotCake.displayRecipe();
 
-// Start baking
+// Hakka küpsetama
 chocolateCake.startBaking();
 carrotCake.startBaking();
